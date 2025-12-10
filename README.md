@@ -46,3 +46,4 @@ This project lets you scrape your [Letterboxd](https://letterboxd.com/) watchlis
     ```
 
     Open `tv_guide.html` in your web browser to view your interactive TV guide.
+# guide-scraper
