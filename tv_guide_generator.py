@@ -166,8 +166,7 @@ def build_html(schedule_by_genre, week_start):
     return html
 
 if __name__ == "__main__":
-    movies_by_genre, action_movies = parse_movies('test_full.csv')
-    # movies_by_genre, action_movies = parse_movies('watchlist.csv')
+    movies_by_genre, action_movies = parse_movies('watchlist.csv')
     week_start = datetime(2000, 1, 2, 0, 0, 0)  # Sunday midnight
     week_end = week_start + timedelta(days=7)
     schedule_by_genre = {}

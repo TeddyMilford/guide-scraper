@@ -132,12 +132,12 @@ def test_scrape_first_page(username=""):
     # Write to CSV
     if results:
         fieldnames = ["name", "url", "image", "director", "year", "genre", "actors", "runtime_mins"]
-        with open("test_full.csv", "w", newline='', encoding="utf-8") as f:
+        with open("watchlist.csv", "w", newline='', encoding="utf-8") as f:
             writer = csv.DictWriter(f, fieldnames=fieldnames)
             writer.writeheader()
             for row in results:
                 writer.writerow(row)
-        print("\nSaved test results to test_full.csv")
+        print("\nSaved test results to watchlist.csv")
     else:
         print("\nNo results to save.")
 
@@ -161,11 +161,11 @@ if __name__ == "__main__":
     # Write to CSV
     if results:
         fieldnames = ["name", "url", "image", "director", "year", "genre", "actors", "runtime_mins"]
-        with open("full.csv", "w", newline='', encoding="utf-8") as f:
+        with open("watchlist.csv", "w", newline='', encoding="utf-8") as f:
             writer = csv.DictWriter(f, fieldnames=fieldnames)
             writer.writeheader()
             for row in results:
                 writer.writerow(row)
-        print("\nSaved results to full.csv")
+        print("\nSaved results to watchlist.csv")
     else:
         print("\nNo results to save.")
